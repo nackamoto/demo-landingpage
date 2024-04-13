@@ -4,7 +4,7 @@ import { community, forSale, housing, jobs, services } from '../data/fields'
 
 const MainBodySection = () => {
     return (
-        <main className='w-full h-full py-10 overflow-y-auto'>
+        <main className='w-full h-full py-12 overflow-y-auto'>
             <section className="grid grid-cols-1 lg:grid-cols-3 mt-6 lg:mt-0">
 
                 <AccordionWithTitle
