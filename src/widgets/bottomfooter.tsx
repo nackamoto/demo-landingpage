@@ -52,13 +52,13 @@ const BottomFooter = () => {
                             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                                 <Footer.LinkGroup >
 
-                                    <Footer.Link href={``}>{`Help`}</Footer.Link>
-                                    <Footer.Link href={``}>{`safety`}</Footer.Link>
-                                    <Footer.Link href={``}>{`privacy`}</Footer.Link>
-                                    <Footer.Link href={``}>{`terms`}</Footer.Link>
-                                    <Footer.Link href={``}>{`about`}</Footer.Link>
-                                    <Footer.Link href={``}>{`app`}</Footer.Link>
-                                    <Footer.Link href={``}>{`sitemap`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/help/`}>{`Help`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/help/safety`}>{`safety`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/privacy.policy`}>{`privacy`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/terms.of.use`}>{`terms`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/`}>{`about`}</Footer.Link>
+                                    <Footer.Link href={`https://www.craigslist.org/about/craigslist_app`}>{`app`}</Footer.Link>
+                                    <Footer.Link href={`https://accra.craigslist.org/sitemap.html`}>{`sitemap`}</Footer.Link>
                                 </Footer.LinkGroup>
 
                             </div>

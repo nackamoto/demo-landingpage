@@ -14,8 +14,8 @@ const HeroSection = () => {
             <nav>
 
                 <Navbar fluid rounded className='bg-orange-200'>
-                    <Navbar.Brand href="https://flowbite-react.com">
-                        <img src="/static/images/craige.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+                    <Navbar.Brand href="https://landingpage-three-black.vercel.app/">
+                        <img src="/static/images/craige.svg" className="mr-3 h-6 sm:h-9" alt="Craigslist" />
                         <span className="self-center whitespace-nowrap text-xl font-bold text-slate-800 dark:text-white">{`craigslist `}</span>
                     </Navbar.Brand>
                     <div className="flex md:order-2 space-x-10 px-6">
@@ -37,9 +37,9 @@ const HeroSection = () => {
                                 </span>
                             }
                             inline>
-                            <Dropdown.Item className='text-slate-800 hover:text-orange-800'>{`Sign up`}</Dropdown.Item>
-                            <Dropdown.Item className='text-slate-800 hover:text-orange-800'>{`Sign in`}</Dropdown.Item>
-
+                            <Dropdown.Item className='text-slate-800 hover:text-orange-800'>
+                                <a href={`https://accounts.craigslist.org/login/home`}>{`My Account`}</a>
+                            </Dropdown.Item>
                         </Dropdown>
 
                         <Dropdown
@@ -126,9 +126,9 @@ const HeroSection = () => {
                                 <p className='flex space-x-0.5  items-center font-medium text-md'><p>{`Services`}</p> <HiChevronDown size={24} /></p>
                             </Popover>
                         </Navbar.Link>
-                        <Navbar.Link href="#">{`Acout Craigslist`}</Navbar.Link>
-                        <Navbar.Link href="#">{`Gigs`}</Navbar.Link>
-                        <Navbar.Link href="#">{`Resumes`}</Navbar.Link>
+                        <Navbar.Link href="https://www.craigslist.org/about/">{`About Craigslist`}</Navbar.Link>
+                        <Navbar.Link href="https://accra.craigslist.org/search/rrr">{`Gigs`}</Navbar.Link>
+                        <Navbar.Link href="https://accra.craigslist.org/search/rrr">{`Resumes`}</Navbar.Link>
                         <Navbar.Link href="#">
                             <Popover
                                 aria-labelledby="default-popover"
@@ -158,12 +158,12 @@ const HeroSection = () => {
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`Unlock Your Success`}</h1>
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Post with Us Today!`}</h1>
                         {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
-                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
-                                {`Post Now`}
-                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                        <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                            {`Post Now`}
+                            <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
 
 
                     </aside>
@@ -172,12 +172,12 @@ const HeroSection = () => {
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">{`Elevate Your Reach`}</h1>
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Post Today!`}</h1>
                         {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
-                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
-                                {`Post Now`}
-                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                        <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                            {`Post Now`}
+                            <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
 
 
                     </aside>
@@ -186,12 +186,12 @@ const HeroSection = () => {
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">{`Amplify Your Voice`}</h1>
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Create Your Ad Now!`}</h1>
                         {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
-                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
-                                {`Post Now`}
-                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                        <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                            {`Post Now`}
+                            <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
 
 
                     </aside>
@@ -200,16 +200,16 @@ const HeroSection = () => {
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`Boost Your Impact`}</h1>
                         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Start Posting`}</h1>
                         {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
-                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
-                                {`Post Now`}
-                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
+                        <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                            {`Post Now`}
+                            <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
 
 
                     </aside>
- 
+
 
                 </Carousel>
             </div>
