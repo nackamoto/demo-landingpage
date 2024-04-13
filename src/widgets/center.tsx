@@ -1,12 +1,11 @@
 import React from 'react'
 import AccordionWithTitle from './customaccordion'
 import { community, forSale, housing, jobs, services } from '../data/fields'
-import MyCalendar from './event'
 
 const MainBodySection = () => {
     return (
-        <main className='w-full h-full flex- overflow-y-auto'>
-            <section className="grid grid-cols-3">
+        <main className='w-full h-full py-10 overflow-y-auto'>
+            <section className="grid grid-cols-1 lg:grid-cols-3 mt-6 lg:mt-0">
 
                 <AccordionWithTitle
                     accordionTitle={`Community`}

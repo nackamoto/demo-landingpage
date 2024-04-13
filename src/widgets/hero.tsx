@@ -1,4 +1,4 @@
-import { Avatar, Button, Dropdown, Navbar, Popover } from 'flowbite-react'
+import { Avatar, Button, Carousel, Dropdown, Navbar, Popover } from 'flowbite-react'
 import React from 'react'
 import { community, languages, services } from '../data/fields';
 import { CustomChip } from './customaccordion';
@@ -10,7 +10,7 @@ import MyCalendar from './event';
 
 const HeroSection = () => {
     return (
-        <header className='flex flex-col h-2/5 w-full bg-orange-200'>
+        <header className='flex flex-col h-2/5 w-full '>
             <nav>
 
                 <Navbar fluid rounded className='bg-orange-200'>
@@ -26,7 +26,7 @@ const HeroSection = () => {
                                 </svg>
                                 <span className="sr-only">Search icon</span>
                             </div>
-                            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-slate-800 rounded-lg bg-orange-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."/>
+                            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-slate-800 rounded-lg bg-orange-100 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." />
                         </div>
                         <Dropdown
                             dir='rtl'
@@ -150,28 +150,70 @@ const HeroSection = () => {
                     </Navbar.Collapse>
                 </Navbar>
             </nav>
+            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
 
-            <section className="flex flex-row items-center justify-center">
+                <Carousel>
+                    <aside className="flex flex-col relative py-8 px-4 mx-auto  text-center lg:py-16 h-96 bg-hero-1 w-full">
 
-
-
-                <section className=" dark:bg-gray-900">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`Unlock Your Success: Post with Us Today!`}</h1>
-                        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p>
-                        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                            <a href="#ss" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`Unlock Your Success`}</h1>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Post with Us Today!`}</h1>
+                        {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
+                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
                                 {`Post Now`}
                                 <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
                             </a>
 
-                        </div>
-                    </div>
-                </section>
 
-            </section>
+                    </aside>
+                    <aside className="flex flex-col relative py-8 px-4 mx-auto  text-center lg:py-16 h-96 bg-hero-2 w-full">
+
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">{`Elevate Your Reach`}</h1>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Post Today!`}</h1>
+                        {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
+                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                                {`Post Now`}
+                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+
+
+                    </aside>
+                    <aside className="flex flex-col relative py-8 px-4 mx-auto  text-center lg:py-16 h-96 bg-hero-3 w-full">
+
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">{`Amplify Your Voice`}</h1>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Create Your Ad Now!`}</h1>
+                        {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
+                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                                {`Post Now`}
+                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+
+
+                    </aside>
+                    <aside className="flex flex-col relative py-8 px-4 mx-auto  text-center lg:py-16 h-96 bg-hero-4 w-full">
+
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`Boost Your Impact`}</h1>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-cyan-800 md:text-5xl lg:text-6xl ">{`Start Posting`}</h1>
+                        {/* <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">{`Creating your advertisement is just a click away, get your post online today and start reaching your audience!`}</p> */}
+                            <a href="#ss" className="absolute bottom-0 mb-14 mr-10 right-0 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                                {`Post Now`}
+                                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+
+
+                    </aside>
+ 
+
+                </Carousel>
+            </div>
+
 
         </header>
     )

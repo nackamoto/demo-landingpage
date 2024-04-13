@@ -7,3 +7,8 @@ html,
 body{
   height: 100%;
 }
+
+.hero-bg {
+  background: url('https://unsplash.com/photos/two-men-facing-each-other-while-shake-hands-and-smiling-NbtIDoFKGO8') no-repeat;
+  width: 100%;
+}
